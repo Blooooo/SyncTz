@@ -5,6 +5,16 @@ public class ComparsionResult {
     private int secondObjectId;
     private String comparsionMessage;
 
+    public ComparsionResult(String comparsionMessage){
+        this.setComparsionMessage(comparsionMessage);
+    }
+
+    public ComparsionResult(String firstObjectId, int secondObjectId, String comparsionMessage){
+        this.setFirstObjectId(firstObjectId);
+        this.setSecondObjectId(secondObjectId);
+        this.setComparsionMessage(comparsionMessage);
+    }
+
     public String getFirstObjectId() {
         return firstObjectId;
     }
